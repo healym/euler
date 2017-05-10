@@ -8,4 +8,7 @@ largest palindrome made from the product of two 3-digit numbers.
 
 ## Answer:
 
+<details>
+	<summary>Click to see answer.</summary>
 
+</details>
