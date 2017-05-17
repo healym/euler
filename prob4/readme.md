@@ -10,5 +10,5 @@ largest palindrome made from the product of two 3-digit numbers.
 
 <details>
 	<summary>Click to see answer.</summary>
-
+ 906609
 </details>
