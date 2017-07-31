@@ -34,5 +34,5 @@ Find the thirteen adjacent digits in the 1000-digit number that have the greates
 
 <details>
 	<summary>Click to see answer.</summary>
-
+23514624000
 </details>
