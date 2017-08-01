@@ -2,7 +2,9 @@ import Data.List
 import System.IO
 
 factors :: Int -> [Int]
-factors n = [x | x <- [2..n], n `mod` x == 0]
+factors n
+    | n == 1 = [1]
+    | otherwise = let x = head([i|i<-[1..n],n `mod` i==0]) in [x] ++ (factors $ n `div` x)
 
 primes_below :: Int -> [Int]
 primes_below n = [x | x <- [2..n],  (head (factors x)) == x]
