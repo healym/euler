@@ -7,13 +7,11 @@
 
 A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
 
-\begin{equation}
  a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
-\end{equation
 
 For example, 32 + 42 = 9 + 16 = 25 = 52.
 
-There exists exactly one Pythagorean triplet for which $ a + b + c = 1000 $
+There exists exactly one Pythagorean triplet for which a + b + c = 1000
 Find the product abc.
 
 
@@ -22,5 +20,5 @@ Find the product abc.
 
 <details>
 	<summary>Click to see answer.</summary>
-23514624000
+
 </details>
