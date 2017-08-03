@@ -10,4 +10,4 @@ primes_below :: Int -> [Int]
 primes_below n = [x | x <- [2..n],  (head (factors x)) == x]
 
 main = do
-putStrLn $ show $ sum $ primes_below 2000000
+putStrLn $ show $ foldl' (+) 1 $ primes_below 2000000
