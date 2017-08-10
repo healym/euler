@@ -5,7 +5,7 @@ import System.IO
 primes_below :: Int -> Int -> [Int] -> [Int]
 primes_below acc num primes
     | acc == num = primes
-    | filter(\x -> (mod x acc /= 0)) primes == [] = primes_below (acc + 1) num (primes ++ [acc])
+    | filter(\x -> (mod acc x == 0)) primes == [] = primes_below (acc + 1) num (primes ++ [acc])
     | otherwise = primes_below (acc + 1) num primes
 
 main = do
