@@ -1,14 +1,10 @@
+var sum = 0;
+
 for (i = 0; i < 1000; i++) {
-  if (i % 15 == 0) {
-    console.log("FizzBuzz ")
-  }
-  else if (i % 3 == 0) {
-    console.log("Fizz ")
-  }
-  else if (i % 5 == 0) {
-    console.log("Buzz ")
-  }
-  else {
-    console.log(i + " ")
+  if (i % 5 == 0 || i % 3 == 0) {
+    sum += i;
   }
 }
+
+console.log(sum);
+return sum;
