@@ -10,7 +10,7 @@ func fibsum(num int) int {
   fibs := []int{1,2,3};
   var sum int;
 
-  for i:= 0; fibs[len(fibs) - 1] + fibs[len(fibs) - 2] < 4000000; i ++ {
+  for ; fibs[len(fibs) - 1] + fibs[len(fibs) - 2] < 4000000; {
     fibs = append(fibs,fibs[len(fibs) - 1] + fibs[len(fibs) - 2]);
   }
 
