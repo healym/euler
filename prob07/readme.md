@@ -8,5 +8,5 @@ Find the 1001st prime
 
 <details>
 	<summary>Click to see answer.</summary>
-104743
+7927
 </details>
