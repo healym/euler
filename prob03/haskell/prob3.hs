@@ -2,10 +2,15 @@ import Data.List
 import System.IO
 
 
-factors n = [ x | x <- [1..n], n `mod` x == 0 ]
-
-primeFacs n = let cofactor x = n `div` x
-  in [ cofactor x | x <- factors n, factors (cofactor x) == [1,cofactor x] ]
+primeFacs :: Integer -> [Integer]
+primeFacs n =
+    go n 2 []
+    where
+        go n current facs
+            | current > n || n == 1 = facs
+            | otherwise = case n `mod` current of
+                            0 -> go (n `div` current) current (facs ++ [current])
+                            _ ->  go n (current + 1) facs
 
 main = do
-  putStrLn $ show $ head $ primeFacs 600851475143
+  putStrLn $ show $ head $ reverse $ primeFacs 600851475143
